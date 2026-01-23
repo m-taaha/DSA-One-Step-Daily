@@ -1,18 +1,23 @@
-# C++ compiled files
+# Ignore compiled C++ binaries
 a.out
 *.out
 *.exe
 
-# Object files
-*.o
+# Ignore binaries without extension (like q1, q2)
+q1
+q2
 
-# Debug files
-*.gch
+# Or ignore ALL files with no extension (BEST OPTION)
+*
 
-# OS junk files
+# Allow folders
+!*/
+
+# Allow C++ source files
+!*.cpp
+
+# Allow gitignore itself
+!.gitignore
+
+# OS junk
 .DS_Store
-Thumbs.db
-
-# Editor configs (optional)
-.vscode/
-.idea/
